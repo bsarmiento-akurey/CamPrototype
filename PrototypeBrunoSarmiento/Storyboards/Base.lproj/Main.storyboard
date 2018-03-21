@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PrototypeBrunoSarmiento" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YAE-qo-zFY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello world!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIS-3c-gSk">
+                                <rect key="frame" x="77" y="309.5" width="221" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <color key="textColor" red="0.0001922522367" green="1" blue="0.57408247980000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mYf-dx-XZ5">
+                                <rect key="frame" x="122.5" y="507" width="130" height="130"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="OfF-UC-fex"/>
+                                    <constraint firstAttribute="width" constant="130" id="mls-tk-dfH"/>
+                                </constraints>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="record"/>
+                                <connections>
+                                    <action selector="clickOnRecordButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="syt-c6-PkQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rBV-aM-7Hz">
+                                <rect key="frame" x="325" y="30" width="35" height="35"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="GvB-hk-EDe"/>
+                                    <constraint firstAttribute="width" constant="35" id="SWQ-A2-zEN"/>
+                                </constraints>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="switch-camera"/>
+                                <connections>
+                                    <action selector="clickOnChangeCameraButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PCK-gz-eaT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Llp-8I-kaG">
+                                <rect key="frame" x="15" y="30" width="35" height="35"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="jxa-1H-tmt"/>
+                                    <constraint firstAttribute="height" constant="35" id="sIq-xl-M6z"/>
+                                </constraints>
+                                <state key="normal" image="trash"/>
+                                <connections>
+                                    <action selector="clickOnDeleteVideoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KPK-SI-US1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qar-bY-Myf">
+                                <rect key="frame" x="325" y="25" width="40" height="40"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Gkw-gW-AkP"/>
+                                    <constraint firstAttribute="height" constant="40" id="qee-4v-wT8"/>
+                                </constraints>
+                                <state key="normal" image="one"/>
+                                <connections>
+                                    <action selector="clickOnFirstFilterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jhl-YB-Xwh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQb-Au-6gV">
+                                <rect key="frame" x="325" y="80" width="40" height="40"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="G5C-TO-PbE"/>
+                                    <constraint firstAttribute="height" constant="40" id="PBE-0q-m26"/>
+                                </constraints>
+                                <state key="normal" image="two"/>
+                                <connections>
+                                    <action selector="clickOnSecondFilterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NnR-1k-IaP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TpB-f5-vGT">
+                                <rect key="frame" x="325" y="135" width="40" height="40"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Sf9-Jb-uvh"/>
+                                    <constraint firstAttribute="width" constant="40" id="kcj-Za-8Fj"/>
+                                </constraints>
+                                <state key="normal" image="download"/>
+                                <connections>
+                                    <action selector="clickOnDownloadButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j7I-Ov-Ege"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TpB-f5-vGT" firstAttribute="top" secondItem="uQb-Au-6gV" secondAttribute="bottom" constant="15" id="EVb-Ne-s14"/>
+                            <constraint firstItem="Llp-8I-kaG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="Hpm-dY-eyv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TpB-f5-vGT" secondAttribute="trailing" constant="10" id="JHk-f1-3e3"/>
+                            <constraint firstItem="OIS-3c-gSk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MVe-eH-Hnb"/>
+                            <constraint firstItem="mYf-dx-XZ5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OAB-34-K0G"/>
+                            <constraint firstItem="rBV-aM-7Hz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="Rl3-zs-lAS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uQb-Au-6gV" secondAttribute="trailing" constant="10" id="Rzb-ys-b11"/>
+                            <constraint firstItem="YAE-qo-zFY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WkU-od-Pjn"/>
+                            <constraint firstItem="Llp-8I-kaG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="aE7-5D-bi8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YAE-qo-zFY" secondAttribute="bottom" id="esg-M7-tCN"/>
+                            <constraint firstItem="YAE-qo-zFY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-20" id="i6y-wl-grg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qar-bY-Myf" secondAttribute="trailing" constant="10" id="p3x-Oi-qwH"/>
+                            <constraint firstItem="OIS-3c-gSk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q09-dP-7dT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mYf-dx-XZ5" secondAttribute="bottom" constant="30" id="r1e-ph-cQy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YAE-qo-zFY" secondAttribute="trailing" id="sF8-mi-TGO"/>
+                            <constraint firstItem="uQb-Au-6gV" firstAttribute="top" secondItem="rBV-aM-7Hz" secondAttribute="bottom" constant="15" id="smr-Sm-5n9"/>
+                            <constraint firstItem="rBV-aM-7Hz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="ujS-Lr-FBq"/>
+                            <constraint firstItem="qar-bY-Myf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="vHe-5Z-0Hc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rBV-aM-7Hz" secondAttribute="trailing" constant="15" id="y39-BO-ZUZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="deleteButton" destination="Llp-8I-kaG" id="G6B-vP-QF5"/>
+                        <outlet property="downloadButton" destination="TpB-f5-vGT" id="oHd-ZZ-uwC"/>
+                        <outlet property="firstFilterButton" destination="qar-bY-Myf" id="5io-v4-Zkh"/>
+                        <outlet property="helloWordLabel" destination="OIS-3c-gSk" id="fg6-4N-hzw"/>
+                        <outlet property="horizontalConstraintForLabel" destination="q09-dP-7dT" id="SWh-mX-Fu8"/>
+                        <outlet property="previewImage" destination="YAE-qo-zFY" id="J9Q-HE-e1q"/>
+                        <outlet property="recordButton" destination="mYf-dx-XZ5" id="nki-6c-fH7"/>
+                        <outlet property="secondFilterButton" destination="uQb-Au-6gV" id="43I-Ys-Z4g"/>
+                        <outlet property="switchCameraButton" destination="rBV-aM-7Hz" id="5Ba-C0-4hY"/>
+                        <outlet property="verticalConstraintForLabel" destination="MVe-eH-Hnb" id="vGk-2h-EBC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="download" width="260" height="260"/>
+        <image name="one" width="50" height="50"/>
+        <image name="record" width="500" height="500"/>
+        <image name="switch-camera" width="50" height="50"/>
+        <image name="trash" width="50" height="50"/>
+        <image name="two" width="50" height="50"/>
+    </resources>
+</document>
